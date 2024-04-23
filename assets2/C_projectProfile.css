@@ -1,0 +1,144 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color:  white;
+  margin: 0;
+  padding: 0;
+ 
+  /* align-items: center;
+  justify-content: center; */
+ 
+}
+header {
+  background-color:green;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 95px;
+}
+
+
+.logo-container img {
+  max-height: 100px;
+  background-color: white;
+}
+h1{
+  color: #004d00;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 0;
+  font-size: 50px;
+  font-family: Montserrat, serif;
+  transition: transform 0.3s ease-in-out;
+  
+}
+h1:hover{
+  transform: scale(1.05);
+
+}
+.container h2{
+  color: #004d00;
+  font-family: Montserrat, serif;
+  font-size: 40px;
+  margin-top: 0;
+
+}
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  align-items: center;
+  height: 1000px;
+  /* margin-top: 0; */
+  position:absolute;
+
+}
+.box-container{
+  width: 400px;
+  height: 700px;
+  margin-left: 80px;
+  color: black;
+  margin-top: 0;
+  
+}
+.box-container input{
+  width: 100%;
+  border: 2px solid #1c1c1e;
+  margin-bottom: 25px;
+  padding: 7px 15px;
+  font-size: 14px;
+  border-radius: 10px;
+  height: 30px;
+ 
+  
+}
+.additionalinfo select{
+  width: 435px;
+  border: 2px solid #1c1c1e;
+  margin-bottom: 25px;
+  padding: 7px 15px;
+  font-size: 14px;
+  border-radius: 10px;
+  height: 45px;
+ 
+  
+}
+
+.box-container button{
+  width: 100px;
+  height: 40px;
+  background-color: #004d00;
+  color:white;
+  border-radius: 10px;
+}
+.box-container button:hover{
+  background-color: green;
+}
+
+.box-container h1{
+  margin-top: 40px;
+}
+.container img{
+  width: 400px;
+  height: 700px;
+  margin-left: 200px;
+  margin-top: 0;
+  margin-right: 0;
+  border-radius: 20px;
+  background-attachment: fixed;
+   position: relative;
+}
+     /* Add CSS styling for the date picker */
+     input[type="date"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: 1px solid 1c1c1e;
+      border-radius: 10px;
+      padding: 7px 15px;
+      width: 435px;
+      height:45px;
+      font-size: 16px;
+      box-sizing: border-box;
+  }
+
+/* Style the dropdown arrow */
+select {
+appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+background-color: transparent;
+background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black"><polygon points="0,0 20,0 10,15"/></svg>');
+background-repeat: no-repeat;
+background-position: right 10px center;
+background-size: 8px; /* Adjust as needed */
+padding-right: 25px; /* Adjust as needed */
+border: none; 
+outline: none;
+}

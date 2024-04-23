@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border:0 ;
+    list-style: none;
+    appearance: none;
+}
+body{
+    font-family:"Poppins",sans-serif;
+    width:100vh;
+    height:100vh;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    background: green;
+}
+
+.logo-container{
+    max-width:250px;
+    background-color:white;
+    border-radius:5px;
+}
+
+.logo-container img{
+    max-width:250px;
+    background-color: white;
+    border-radius:5px;
+}
+a{
+    color:white;
+
+}
+
+
+header{
+    width:250px;
+}
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+    color:white;
+    
+
+}
+h2{
+    font-size:30px;
+    text-align: center;
+    padding-top: 30px;
+    font-family: poppins;
+    color: blueviolet;
+}
+h3{
+    font-size:25px;
+    font-weight: 400;
+   
+}
+h4{
+    font-size:0.8rem;
+}
+small{
+    font-size:0.75rem;
+}
+
+p{
+    color:black;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+b{
+    color:red;
+}
+.primary{
+    color:brown;
+}
+.success{
+    color:purple;
+}
+/* aside */
+aside{
+    height:100vh;
+
+
+}
+
+aside .top div.close{
+    display:none;
+}
+
+/* sidebar */
+aside .sidebar{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    height:85vh;
+    position:relative;
+    top:1rem;
+    padding-top:20px;
+    margin-left:0px;
+    width:250px;
+    border-radius:10px;
+    
+}
+aside h3{
+    font-weight:400;
+    font-size: 18px;
+    font-family: poppins;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+aside .sidebar a{
+    display:flex;
+    color:darkgreen;
+    margin-left:2rem;
+    gap:1rem;
+    align-items:center;
+    height:3.2rem;
+    transition:all .1s ease-in ;
+}
+aside .sidebar a span{
+    font-size:2rem;
+    transition:all .1s ease-in;
+    
+}
+aside sidebar a:last-child{
+position: absolute;
+bottom:3rem;
+width:100%;
+
+}
+aside .sidebar a.active{
+    background:pink;
+    color:orange;
+    margin-left:0;
+
+}
+aside .sidebar a.active::before{
+    content:'';
+    width:6px;
+    height:100%;
+    background-image:violet;
+}
+aside .sidebar a:hover{
+    color:cadetblue;
+}
+
+
+aside .sideabar a:hover span{
+    margin-left:1rem;
+    transition: .4s ease;
+
+}
+aside .side.msg_count{
+    background:lightgreen;
+    color:white;
+    padding:2px 5px;
+    font-size:11px;
+    border-radius:1px;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:1500px;
+    margin:0px;
+
+}
+.dashboard-container {
+    width: 800px; /* Adjust to your desired width */
+    height: 85vh;
+    margin-left: 70px;
+    margin-right: 0px;
+    margin-top: 18px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    font-family: poppins;
+    font-size: 20px;
+    
+}
+.recent-activity-section {
+    padding-top: 50px;
+    text-align: center;
+    background-color: rgb(167, 228, 167);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.recent-activity-section:hover{
+    background-color: rgb(138, 200, 138);
+    transform: scale(1.05);
+}
+
+.recent-activity-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-activity-section li {
+    padding: 10px 0;
+ 
+}
+
+.recent-activity-section li:last-child {
+    border-bottom: none;
+}
+
+.recent-activity-section a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.recent-activity-section a:hover {
+    color: #0056b3;
+}
+
+.material-symbols-outlined {
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}

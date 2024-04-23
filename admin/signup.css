@@ -1,0 +1,89 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+body{
+  background-color: #b8e994;
+}
+
+div.container{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+   border-radius: 1vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 50px 50px -50px darkslategray;
+  height:600px;
+  margin-top:3%;
+}
+
+div.container div.myform{
+  width: 300px;
+  margin-right: 40px;
+  margin-bottom: 5px;
+}
+
+div.container div.myform h1{
+  color: #004d00;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-left: 9%;
+}
+
+
+
+div.container div.myform input{
+  width: 100%;
+  border-bottom: 2px solid #1c1c1e;
+  margin-bottom: 25px;
+  padding: 7px 15px;
+  font-size: 14px;
+  border-radius: 10px;
+  height: 30px;
+ }
+
+
+div.container div.myform button{
+  color: black;
+  background-color:#b8e994;
+  width: 140px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 5px 12px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+div.container div.myform button:hover {
+  background-color: lightgreen; /* Change the background color on hover */
+}
+
+
+
+div.container div.image img{
+  width: 400px;
+  height: 500px;
+  border-radius: 1vh;
+}
+.login-link{
+  margin-top: 25px;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 35%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+}

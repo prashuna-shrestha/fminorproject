@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #004d00; /* Dark green color */
+    color: #fff; /* White text color */
+  }
+  
+  header {
+    background-color:dark green; /* Dark green color for the header */
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    max-height: 100px;
+    background-color:white;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    
+  }
+  
+  nav li {
+    margin-right: 40px;
+
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #00ffff; /* Aqua blue color on hover */
+  }
+  
+  .main-content {
+    padding: 60px;
+  }
+  
+  .float-right {
+    float: right;
+    max-width: 400px; /* Adjust as needed */
+    margin-left: 20px;
+    height:auto;
+    width:100%;
+  }
+  
+  .slogan-container {
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+  }
+  
+  /* .search-bar {
+    margin-top: 20px;
+    display: flex;
+  }
+   */
+  p {
+    font-size: 18px;
+    color: #cccccc; /* Light gray text color for paragraphs */
+    line-height: 1.5;
+   }
+  .search-bar input {
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .search-bar button {
+    background-color: #00ffff; /* Aqua blue color for the button */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      margin: 10px 0;
+    }
+  }

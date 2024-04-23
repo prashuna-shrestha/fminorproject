@@ -1,0 +1,314 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border:0 ;
+    list-style: none;
+    appearance: none;
+}
+body{
+    font-family:"Poppins",sans-serif;
+    width:100vh;
+    height:100vh;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    background:green;
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:1200px;
+    margin:0px;
+
+}.logo-container{
+    max-width:250px;
+    background-color:white;
+    border-radius:5px;
+}
+
+.logo-container img{
+    max-width:250px;
+    background-color: white;
+    border-radius:5px;
+    height:97px;
+}
+a{
+    color:white;
+
+}
+header {
+        background-color:green;
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        height: 95px;
+    }
+
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+    color:white;
+    
+
+}
+h2{
+    font-size:2rem;
+    padding-top:0px;
+    padding-bottom: 20px;
+
+}
+h3{
+    font-size:0.8;
+    font-weight: bolder;
+}
+h4{
+    font-size:0.8rem;
+}
+small{
+    font-size:0.75rem;
+}
+
+p{
+    color:black;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+b{
+    color:red;
+}
+.primary{
+    color:brown;
+}
+.success{
+    color:purple;
+}
+
+aside{
+    height:100vh;
+
+
+}
+
+aside .top div.close{
+    display:none;
+}
+
+/* sidebar */
+aside .sidebar{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    height:140vh;
+    position:relative;
+    top:8rem;
+    padding-top:20px;
+    margin-left:0px;
+    width:250px;
+    border-radius:10px;
+}
+aside h3{
+    font-weight:400;
+
+}
+aside .sidebar a{
+    display:flex;
+    color:darkgreen;
+    margin-left:2rem;
+    gap:1rem;
+    align-items:center;
+    height:3.2rem;
+    transition:all .1s ease-in ;
+}
+aside .sidebar a span{
+    font-size:2rem;
+    transition:all .1s ease-in;
+    
+}
+aside sidebar a:last-child{
+position: absolute;
+bottom:1rem;
+width:100%;
+
+}
+aside .sidebar a.active{
+    background:pink;
+    color:orange;
+    margin-left:0;
+
+}
+aside .sidebar a.active::before{
+    content:'';
+    width:6px;
+    height:100%;
+    background-image:violet;
+}
+aside .sidebar a:hover{
+    color:cadetblue;
+}
+
+
+aside .sideabar a:hover span{
+    margin-left:1rem;
+    transition: .4s ease;
+
+}
+aside .side.msg_count{
+    background:lightgreen;
+    color:white;
+    padding:2px 5px;
+    font-size:11px;
+    border-radius:1px;
+}
+
+.dashboard-container{
+    width:800px;
+    height:140vh;
+    margin-left:70px;
+    margin-right:0px;
+    margin-top:8rem;
+    background-color: white;
+    border-radius:30px;
+    position: relative;
+    font-family: poppins;
+    font-size: 18px;
+}
+.profile-section{
+    color:black;
+    font-family:Poppins;
+    font-weight:400;
+    padding-left:50px;
+    padding-top:30px;
+}
+.profile-info, .additionalinfo{
+    margin-bottom:20px;
+    display:flex;
+
+
+}
+.profile-info label, .additionalinfo label{
+    flex:0 0 150px;
+    text-align:left;
+    margin-right: 20px;
+
+}
+.profile-info span{
+    flex:1;
+    text-align: left;
+    font-family:Poppins;
+}
+.profile-section button{
+    background-color:green;
+    width:100px;
+    height:30px;
+    color:white;
+    border-radius:10px;
+    margin-top:30px;
+
+    
+}
+.profile-section button:hover{
+    background-color: greenyellow;
+}
+.additionalinfo select{
+    width: 435px;
+    border: 2px solid #1c1c1e;
+    margin-bottom: 25px;
+    padding: 7px 15px;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 45px;
+}
+.profile-picture{
+   
+    top: 150px; 
+    left: 1010px;  
+    z-index: 1000;
+    background-color:palegreen;
+    height:200px;
+
+
+   
+}
+.profile-picture img {
+    width: 100px; 
+    height: 95px;
+    border-radius: 50%;
+    margin-left:680px;
+    margin-top:3px;
+
+
+}
+.PP{
+    display:flex;
+    flex-direction:column;
+    margin-left:500px;
+    
+}
+.PP input{
+    margin-left:100px;
+    
+}
+.PP label{
+    font-size:15px;
+    padding-left:25px;
+    padding-right:15px;
+    margin-left:120px;
+}
+
+.ProfileButton{
+    margin-right:15px;
+    margin-left:600px;
+    margin-top:10px;
+    height:35px;
+    margin-bottom:15px;
+    background-color:green;
+    border-radius:10px;
+    width:150px;
+}
+/* @media screen and (max-width: 1200px) {
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    header {
+      width: 100%;
+    }
+  
+    .dashboard-container {
+      width: 100%;
+      margin: 0 auto;
+    }
+  } */
+  
+  /* @media screen and (max-width: 768px) {
+    aside {
+      display: none;
+    }
+  
+    .dashboard-container {
+      margin: 50px auto;
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .profile-section {
+      padding: 0;
+    }
+  
+    .profile-section input {
+      width: 100%;
+    }
+  } */
+ 
